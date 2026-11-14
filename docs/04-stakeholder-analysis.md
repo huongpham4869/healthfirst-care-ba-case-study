@@ -2,13 +2,15 @@
 
 *HealthFirst Care - Stakeholder Identification, Influence/Interest Analysis and Engagement Plan*
 
+**Author:** Pham Truong Que Huong · **Version:** 1.0 · **Date:** July 2026 · **Status:** Draft for portfolio, not approved
+
 [← RTM](03-rtm.md) · [README](../README.md) · [Process Analysis →](05-process-analysis.md)
 
 ---
 
 ## 1. Purpose
 
-This document identifies the stakeholders relevant to the HealthFirst Care case study, summarises their concerns, assesses their influence and interest, and proposes engagement activities for requirements analysis and validation. The analysis is based on the simulated stakeholder profiles and case brief provided for this case study. It does not represent actual stakeholder interviews or completed engagement activities.
+This document identifies the stakeholders relevant to the HealthFirst Care case study, summarizes their concerns, assesses their influence and interest, and proposes engagement activities for requirements analysis and validation. The analysis is based on the simulated stakeholder profiles and case brief provided for this case study. It does not represent actual stakeholder interviews or completed engagement activities.
 
 ## 2. Stakeholder Identification
 
@@ -32,7 +34,7 @@ The table records what each stakeholder profile raised, so that every "elicitati
 | Sarah Ayvazyan | Patients | Difficult online booking; untimely cancellation notices; long waits without updates; unclear post-consultation instructions; prefers email/SMS. |
 | Lak Ayer | Patients | Confusing online booking; prefers in-person scheduling; nearly an hour waiting for a cardiology consultation; difficulty reaching support. |
 | Dr. Aftab Khan | Doctors (Cardiology) | Overbooked schedules; unavailable diagnostic equipment at peak times; delayed lab results; inefficient patient transfers. |
-| Dr. Robert Lee | Doctors (Orthopedics) | Operating-room delays; limited specialised equipment; late physiotherapy updates; cumbersome referrals. |
+| Dr. Robert Lee | Doctors (Orthopedics) | Operating-room delays; limited specialized equipment; late physiotherapy updates; cumbersome referrals. |
 | Santa Murmu | Nurses (Pediatrics) | Uneven night-shift staffing; limited supplies; poor emergency-department coordination; late transfer notices. |
 | Jessica Gomes | Nurses (Emergency) | High demand for beds and monitors at shift changes; weekend understaffing; delayed radiology results; ICU transfer miscommunication. |
 | Maria Carter | Administrative Staff (Scheduling) | Double bookings; limited doctor-availability visibility; outdated patient records; slow history retrieval. |

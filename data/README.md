@@ -53,6 +53,6 @@ Dates use the DD-MM-YY format of the source files (for example, `13-01-24` = 13 
 - **Satisfaction by visit:** feedback has no appointment reference, so it cannot be reliably tied to a specific visit.
 - **Reasons and slot reuse:** cancellation and rescheduling reasons are not recorded, and the data does not show whether cancelled slots were reused.
 - **Department comparisons:** each department has one doctor, one time slot and the same outcome across all four of its appointments, so department and time-slot differences reflect how the sample was constructed.
-- **Capacity:** the resource data has no department field and no capacity baseline, so usage hours are not a utilisation rate.
+- **Capacity:** the resource data has no department field and no capacity baseline, so usage hours are not a utilization rate.
 
 The full list is in [BRD Section 6.4](../docs/02-brd.md#64-data-limitations) and [6.5](../docs/02-brd.md#65-measurement-gaps-and-open-questions).

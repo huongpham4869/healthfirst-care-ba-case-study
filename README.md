@@ -9,22 +9,22 @@ A Business Analysis capstone case study on where appointments, resources and inf
 
 ## At a glance
 
-| | |
+|  |  |
 |---|---|
 | **Problem** | Scheduling, patient records and reporting run on separate systems and manual work. Patients face disrupted appointments and long waits; staff cannot see current doctor, room or equipment availability. |
-| **Approach** | Data analysis in Excel, root cause analysis by problem area, As-Is / To-Be modelling in BPMN, gap analysis, stakeholder analysis |
+| **Approach** | Data analysis in Excel, root cause analysis by problem area, As-Is / To-Be modeling in BPMN, gap analysis, stakeholder analysis |
 | **Proposed improvements** | Online booking with conflict checks, reminders and delay notices, live room and equipment status, shared patient information between departments, and recording check-in and consultation start times |
 | **Key evidence** | 60% appointment disruption, 20% no-show, satisfaction 7.0 / 10 (sample data) |
 | **Deliverables** | BRD, RTM (26 requirements), stakeholder analysis, 6 BPMN models, data analysis with dashboard, risk management plan, 19-slide summary |
 
-**Start here:** the [Project Summary](docs/00-project-summary.md) (19 slides), then the [BRD](docs/02-brd.md).
+**Start here:** the [Project Summary](docs/01-project-summary.md) (19 slides), then the [BRD](docs/02-brd.md).
 
 ## Deliverables
 
 | # | Document | What it shows |
 |---|---|---|
-| 00 | [Project Summary](docs/00-project-summary.md) | The case study in 19 slides |
-| 01 | [Project Overview](docs/01-project-overview.md) | Context, approach and document list |
+| 00 | [Project Overview](docs/00-project-overview.md) | Context, approach and document list |
+| 01 | [Project Summary](docs/01-project-summary.md) | The case study in 19 slides |
 | 02 | [BRD](docs/02-brd.md) | Pain points, root cause, data findings and limits, objectives, scope and requirements |
 | 03 | [RTM](docs/03-rtm.md) | Source, evidence, priority and verification for each requirement |
 | 04 | [Stakeholder Analysis](docs/04-stakeholder-analysis.md) | Stakeholder profiles, influence / interest matrix and engagement plan |
@@ -58,9 +58,9 @@ System selection, development and implementation are out of scope ([BRD §8](doc
 
 This was my capstone project. Working from the case brief and the stakeholder profiles, I:
 
-1. **Analysed the data.** Cleaned and linked three sample datasets in Excel, calculated baseline indicators and built a dashboard.
-2. **Found the problems.** Identified pain points and analysed root causes in three separate problem areas.
-3. **Modelled the processes.** Mapped three processes As-Is and To-Be in BPMN and wrote the gap analysis.
+1. **Analyzed the data.** Cleaned and linked three sample datasets in Excel, calculated baseline indicators and built a dashboard.
+2. **Found the problems.** Identified pain points and analyzed root causes in three separate problem areas.
+3. **Modeled the processes.** Mapped three processes As-Is and To-Be in BPMN and wrote the gap analysis.
 4. **Specified.** Wrote business, functional and non-functional requirements, user stories, and traced them in an RTM.
 5. **Planned for delivery.** Prepared the stakeholder analysis and engagement plan, the risk management plan and the summary slides.
 
@@ -84,7 +84,7 @@ The three sample datasets cover 1–20 January 2024 (20 appointments, 15 feedbac
 
 *Top of the Excel operations dashboard. The full dashboard and analysis tables are on the [Data Analysis](docs/06-data-analysis.md) page.*
 
-**Root causes** ([BRD §5](docs/02-brd.md#5-root-cause-analysis)), analysed separately for each problem area:
+**Root causes** ([BRD §5](docs/02-brd.md#5-root-cause-analysis)), analyzed separately for each problem area:
 
 | Problem area | Underlying gap |
 |---|---|
@@ -105,15 +105,15 @@ The three sample datasets cover 1–20 January 2024 (20 appointments, 15 feedbac
 | Confirmation, reminder and notice of hospital-side changes or delays | FR-07, FR-08, FR-09 |
 | Current room and equipment status before assignment | FR-10, FR-11 |
 | Check-in time and consultation start time recorded for each attended appointment | FR-16 |
-| Patient information available to the next authorised department without re-entry | FR-12, FR-13 |
+| Patient information available to the next authorized department without re-entry | FR-12, FR-13 |
 | A current summary of appointment outcomes for management | FR-14 |
 
 | Decision | Why | Alternative rejected |
 |---|---|---|
-| Analyse root causes by problem area | The evidence does not support one causal chain | One causal chain for all problems |
+| Analyze root causes by problem area | The evidence does not support one causal chain | One causal chain for all problems |
 | Add FR-16 to record check-in and consultation start times | Waiting time cannot be measured today, so the 20% target cannot be tested without a baseline | Accepting the 20% target as a requirement without a way to measure it |
 | Define business needs only, not choose a system | System selection is out of scope; the IT Manager's ideas (HIS, cloud booking) are recorded as options | Recommending a specific system |
-| Use discharge as an illustrative scenario | Shows the coordination gap; its steps are a modelling assumption | Presenting the discharge steps as validated |
+| Use discharge as an illustrative scenario | Shows the coordination gap; its steps are a modeling assumption | Presenting the discharge steps as validated |
 
 ## 5. Requirements and traceability
 
@@ -158,5 +158,5 @@ To check the figures, open the CSV files in [`data/`](data) (GitHub shows them a
 
 ## Tools and techniques
 
-- **Tools:** Excel (data cleaning, analysis and dashboard), BPMN modelling, Word, PowerPoint
-- **Techniques:** pain-point analysis, root cause analysis by problem area, As-Is / To-Be modelling, gap analysis, stakeholder influence / interest analysis, MoSCoW, requirements traceability, user stories with Given / When / Then acceptance criteria, risk register and risk matrix
+- **Tools:** Excel (data cleaning, analysis and dashboard), BPMN modeling, Word, PowerPoint
+- **Techniques:** pain-point analysis, root cause analysis by problem area, As-Is / To-Be modeling, gap analysis, stakeholder influence / interest analysis, MoSCoW, requirements traceability, user stories with Given / When / Then acceptance criteria, risk register and risk matrix

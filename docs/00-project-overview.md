@@ -2,7 +2,7 @@
 
 *BA Case Study - Enhancing Operational Efficiency in a Multi-Specialty Hospital*
 
-[← Project Summary](00-project-summary.md) · [README](../README.md) · [BRD →](02-brd.md)
+[README](../README.md) · [Project Summary →](01-project-summary.md)
 
 ---
 
@@ -29,7 +29,7 @@ The project defines business needs and future-state process requirements; it doe
 - Data analysis
 - Business, functional and non-functional requirements
 - To-Be process models and gap analysis
-- Requirements prioritisation and traceability
+- Requirements prioritization and traceability
 - Proposed acceptance/validation approach, assumptions, and limitations
 
 **Out Of Scope**
@@ -44,8 +44,8 @@ The project defines business needs and future-state process requirements; it doe
 
 | File | Format | Content |
 |---|---|---|
-| 00\. Project Summary | Slides | 19-slide project summary |
-| 01\. Project Overview | Word | Context, approach, scope and document list |
+| 00\. Project Overview | Word | Context, approach, scope and document list |
+| 01\. Project Summary | Slides | 19-slide project summary |
 | 02\. Business Requirements Document (BRD) | Word | Business problem, findings, root cause, objectives, requirements, limitations and acceptance criteria |
 | 03\. Requirements Traceability Matrix (RTM) | Excel | Requirement source, evidence, related data, priority and verification |
 | 04\. Stakeholder Analysis & Engagement Plan | Word | Stakeholder profiles, influence/interest matrix and engagement plan |
@@ -55,4 +55,4 @@ The project defines business needs and future-state process requirements; it doe
 
 ---
 
-[← Project Summary](00-project-summary.md) · [README](../README.md) · [BRD →](02-brd.md)
+[README](../README.md) · [Project Summary →](01-project-summary.md)

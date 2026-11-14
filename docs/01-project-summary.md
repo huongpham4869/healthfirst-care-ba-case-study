@@ -2,14 +2,14 @@
 
 *HealthFirst Care - The case study in 19 slides*
 
-[README](../README.md) · [Project Overview →](01-project-overview.md)
+[← Project Overview](00-project-overview.md) · [README](../README.md) · [BRD →](02-brd.md)
 
 ---
 
 | Part | Slides |
 |---|---|
 | Overview | [Title](#1-title) · [Table of Contents](#2-table-of-contents) · [Executive Summary](#3-executive-summary) · [Introduction](#4-introduction) · [Business Objectives](#5-business-objectives) · [Methodology](#6-methodology) |
-| Analysis | [Business Requirements Document (BRD)](#7-business-requirements-document-brd) · [Constraints, Assumptions and Acceptance Criteria](#8-constraints-assumptions-and-acceptance-criteria) · [Requirement Traceability Matrix (RTM)](#9-requirement-traceability-matrix-rtm) · [Stakeholder Analysis and Engagement Plan](#10-stakeholder-analysis-and-engagement-plan) · [Scope](#11-scope) · [Data Analysis](#12-data-analysis) · [Data Visualisation](#13-data-visualisation) · [As-Is Process and Root Cause](#14-as-is-process-and-root-cause) · [To-Be Process (BPMN)](#15-to-be-process-bpmn) |
+| Analysis | [Business Requirements Document (BRD)](#7-business-requirements-document-brd) · [Constraints, Assumptions and Acceptance Criteria](#8-constraints-assumptions-and-acceptance-criteria) · [Requirement Traceability Matrix (RTM)](#9-requirement-traceability-matrix-rtm) · [Stakeholder Analysis and Engagement Plan](#10-stakeholder-analysis-and-engagement-plan) · [Scope](#11-scope) · [Data Analysis](#12-data-analysis) · [Data Visualization](#13-data-visualization) · [As-Is Process and Root Cause](#14-as-is-process-and-root-cause) · [To-Be Process (BPMN)](#15-to-be-process-bpmn) |
 | Wrap-up | [Risk Management Plan](#16-risk-management-plan) · [Key Findings and Recommendations](#17-key-findings-and-recommendations) · [Conclusion](#18-conclusion) · [Data Limitations, Open Questions and Documents](#19-data-limitations-open-questions-and-documents) |
 
 ## 1. Title
@@ -60,9 +60,9 @@
 
 ![Slide 12: Data Analysis](../assets/slides/slide-12.png)
 
-## 13. Data Visualisation
+## 13. Data Visualization
 
-![Slide 13: Data Visualisation](../assets/slides/slide-13.png)
+![Slide 13: Data Visualization](../assets/slides/slide-13.png)
 
 ## 14. As-Is Process and Root Cause
 
@@ -90,4 +90,4 @@
 
 ---
 
-[README](../README.md) · [Project Overview →](01-project-overview.md)
+[← Project Overview](00-project-overview.md) · [README](../README.md) · [BRD →](02-brd.md)

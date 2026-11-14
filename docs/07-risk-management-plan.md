@@ -2,6 +2,8 @@
 
 *HealthFirst Care - Risk Register, Risk Assessment Matrix, Mitigation and Contingency Plans*
 
+**Author:** Pham Truong Que Huong · **Version:** 1.0 · **Date:** July 2026 · **Status:** Draft for portfolio, not approved
+
 [← Data Analysis](06-data-analysis.md) · [README](../README.md)
 
 ---
@@ -117,7 +119,7 @@ Contingency actions define the response if a risk materialises despite mitigatio
 | **R03** | Escalate sustained resource shortages to Hospital Management. Staffing and facilities decisions remain outside scope. |
 | **R04** | If only the online channel is unavailable, direct patients to the assisted channel, provided staff can access current availability and conflict checks. If the scheduling system itself is unavailable, follow an approved downtime procedure; this procedure must be defined before implementation |
 | **R05** | Hold a review with affected stakeholders, escalate scope decisions to Hospital Management, and record unresolved requirements as open items. |
-| **R06** | Reanalyse the operational data, revise affected findings and requirements, and update the RTM. |
+| **R06** | Reanalyze the operational data, revise affected findings and requirements, and update the RTM. |
 
 ## 6. Risk Monitoring and Review
 

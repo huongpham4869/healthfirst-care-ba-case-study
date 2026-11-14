@@ -2,6 +2,8 @@
 
 *HealthFirst Care - As-Is / To-Be Process Models, Gap Analysis and User Stories*
 
+**Author:** Pham Truong Que Huong · **Version:** 1.0 · **Date:** July 2026 · **Status:** Draft for portfolio, not approved
+
 [← Stakeholder Analysis](04-stakeholder-analysis.md) · [README](../README.md) · [Data Analysis →](06-data-analysis.md)
 
 ---
@@ -38,7 +40,7 @@ Patients can start a booking online or ask administrative staff to book on their
 
 The slot is reserved and a confirmation is sent only after the request passes the conflict check. The reminder is a separate, time-triggered step (proposed lead time: 24 hours before the appointment), not part of the booking transaction, and it is sent only for active, confirmed appointments. Rescheduling follows the same availability and conflict-check steps, and a cancelled or rescheduled slot becomes available for booking again.
 
-When authorised staff record a hospital-initiated appointment change, cancellation, or delay, the patient is notified. Rescheduling and cancellation details are covered in the gap analysis and user stories rather than separate process diagrams.
+When authorized staff record a hospital-initiated appointment change, cancellation, or delay, the patient is notified. Rescheduling and cancellation details are covered in the gap analysis and user stories rather than separate process diagrams.
 
 The Hospital System lane shows where system support is required; it does not represent a selected product or vendor. Conflict checking prevents double booking only. It does not set how many appointments a consultation session can hold, which remains an open question (BRD Section 6.5).
 
@@ -93,7 +95,7 @@ The available resource data is too limited to establish actual capacity or quant
 
 Administrative staff retrieve the patient record, verify the patient's identity against it and complete check-in; the Hospital System then records the check-in time. The system displays current room and equipment status, which the nurse reviews. If the required room and equipment are available, the nurse assigns them; resources marked In Use or Under Maintenance cannot be assigned. If they are not available, the nurse records the delay, the system sends a delay notification (FR-09), and the patient waits. The nurse then rechecks availability using the updated status until the required resources are free; the initial notification is not repeated at each recheck. This improves visibility and communication but does not create physical capacity or resolve staffing shortages, which are outside scope.
 
-Once the patient is in the assigned room, the doctor begins the consultation and the system records the consultation start time at that point. Waiting time = consultation start time − check-in time (FR-16). The 20% target and this working definition still need confirmation against the case brief (BRD Section 6.5). After the consultation, the doctor updates the patient record, and the update is available to the next authorised department (FR-12, FR-13).
+Once the patient is in the assigned room, the doctor begins the consultation and the system records the consultation start time at that point. Waiting time = consultation start time − check-in time (FR-16). The 20% target and this working definition still need confirmation against the case brief (BRD Section 6.5). After the consultation, the doctor updates the patient record, and the update is available to the next authorized department (FR-12, FR-13).
 
 ### 2.3 Gap analysis
 
@@ -103,11 +105,11 @@ Once the patient is in the assigned room, the doctor begins the consultation and
 | Nurse attempts room assignment without current status information | PP-06: Availability is unknown until assignment is attempted. | Display current room and equipment status before assignment; prevent assignment of unavailable resources. | FR-10, FR-11 |
 | Patient waits until a room becomes available | PP-05: Manual waiting causes delays. | Nurse records the delay and the system sends a delay notification; the nurse rechecks resource status until the required resources are available. | FR-09, FR-10, FR-11 |
 | Patient waits without an update; waiting time is not measured | PP-10: Delays are not adequately communicated or measured. | Notify the patient after staff record a delay; record the check-in time after check-in and the consultation start time when the consultation begins. | FR-09, FR-16 |
-| Doctor updates the patient record manually after the consultation | PP-07: Information recorded manually may not reach the next department promptly. | Doctor updates the patient record once; the update is available to the next authorised department without re-entry. | FR-12, FR-13 |
+| Doctor updates the patient record manually after the consultation | PP-07: Information recorded manually may not reach the next department promptly. | Doctor updates the patient record once; the update is available to the next authorized department without re-entry. | FR-12, FR-13 |
 
 ## 3. Interdepartmental Coordination Process
 
-Discharge is used as an illustrative scenario to show coordination between doctors, nurses and administrative staff. The stakeholder profiles describe manual hand-offs in other workflows (test results, referrals and patient transfers) but do not describe discharge, so the As-Is steps below are a modelling assumption that needs validation with clinical and administrative staff. Billing is shown only as a downstream recipient of recorded information; detailed billing and clinical workflows are outside scope.
+Discharge is used as an illustrative scenario to show coordination between doctors, nurses and administrative staff. The stakeholder profiles describe manual hand-offs in other workflows (test results, referrals and patient transfers) but do not describe discharge, so the As-Is steps below are a modeling assumption that needs validation with clinical and administrative staff. Billing is shown only as a downstream recipient of recorded information; detailed billing and clinical workflows are outside scope.
 
 ### 3.1 As-Is: Interdepartmental Coordination Process
 
@@ -131,7 +133,7 @@ In this scenario, the discharge summary and instructions are prepared manually (
 
 The Hospital System retrieves existing patient-record information and pre-fills a discharge-summary draft. Clinical staff review and complete the summary; this lane is provisional because the responsible role and approval owner are not confirmed, and the system does not approve the document. Once the summary is complete, discharge instructions (role also to be confirmed) and billing clearance proceed in parallel. Administrative staff process billing clearance using the available discharge information (FR-12, FR-13), and the scenario ends when the discharge documentation and billing clearance are complete.
 
-Patient feedback is not modelled in either discharge diagram: the case materials do not establish it as part of this process or as a dependency for discharge completion. Linking feedback to a specific visit remains a data need rather than a confirmed process requirement.
+Patient feedback is not modeled in either discharge diagram: the case materials do not establish it as part of this process or as a dependency for discharge completion. Linking feedback to a specific visit remains a data need rather than a confirmed process requirement.
 
 **Open questions (illustrative scenario, not validated)**
 
@@ -149,7 +151,7 @@ Patient feedback is not modelled in either discharge diagram: the case materials
 |---|---|---|---|
 | Nurse prepares the discharge summary manually | PP-07: Manual preparation takes staff time and may delay the next step. | System pre-fills a draft from existing patient-record information; clinical staff (role to be confirmed) review and complete it. | FR-13 |
 | Billing waits for the discharge information | PP-07: Manual hand-offs delay downstream processing. | Allow billing clearance and discharge instructions to proceed in parallel once the summary is complete. | FR-12, FR-13 |
-| Information is re-entered in separate documentation steps | PP-08: Repeated entry increases effort and the risk of inconsistent records. | Make previously recorded information available to the next authorised department without repeated manual entry. | FR-12, FR-13 |
+| Information is re-entered in separate documentation steps | PP-08: Repeated entry increases effort and the risk of inconsistent records. | Make previously recorded information available to the next authorized department without repeated manual entry. | FR-12, FR-13 |
 
 ## 4. User Stories and Acceptance Criteria
 
@@ -203,7 +205,7 @@ As a patient, I want to book an appointment online or through the front desk, so
 
 - **AC1:** Given I have a confirmed appointment, when the agreed reminder time is reached, then I receive a reminder. A 24-hour lead time is proposed, subject to confirmation.
 
-- **AC2:** Given authorised staff record a hospital-initiated cancellation, appointment change, or delay, when the record is saved, then a notification is triggered. A five-minute delivery target is proposed, subject to confirmation.
+- **AC2:** Given authorized staff record a hospital-initiated cancellation, appointment change, or delay, when the record is saved, then a notification is triggered. A five-minute delivery target is proposed, subject to confirmation.
 
 - **AC3:** Given a notification fails to deliver, when the failure is recorded, then the appointment retains its processed status, the failure is visible to staff, and follow-up through the assisted channel is possible.
 
@@ -213,7 +215,7 @@ As a patient, I want to book an appointment online or through the front desk, so
 
 **Acceptance Criteria**
 
-- **AC1:** Given authorised staff update a room or equipment status, when the change is saved, then the displayed status reflects the update. A 60-second refresh target is proposed, subject to confirmation.
+- **AC1:** Given authorized staff update a room or equipment status, when the change is saved, then the displayed status reflects the update. A 60-second refresh target is proposed, subject to confirmation.
 
 - **AC2:** Given a room is under maintenance or required equipment is unavailable, when a nurse attempts an assignment, then the unavailable resource cannot be assigned.
 

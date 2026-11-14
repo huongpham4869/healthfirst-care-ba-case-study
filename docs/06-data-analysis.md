@@ -2,11 +2,13 @@
 
 *HealthFirst Care - Cleaned data, baseline indicators, analysis tables and the dashboard*
 
+**Author:** Pham Truong Que Huong · **Version:** 1.0 · **Date:** July 2026 · **Status:** Draft for portfolio, not approved
+
 [← Process Analysis](05-process-analysis.md) · [README](../README.md) · [Risk Management Plan →](07-risk-management-plan.md)
 
 ---
 
-The Data Analysis Workbook (Excel) cleans and links the three source datasets, then produces the figures reported in [BRD Section 6](02-brd.md#6-data-analysis-summary) and in the [Project Summary](00-project-summary.md). Every summary figure is a formula. Change the cleaned data and the figures follow. This page shows the results. The source datasets are in [`data/`](../data).
+The Data Analysis Workbook (Excel) cleans and links the three source datasets, then produces the figures reported in [BRD Section 6](02-brd.md#6-data-analysis-summary) and in the [Project Summary](01-project-summary.md). Every summary figure is a formula. Change the cleaned data and the figures follow. This page shows the results. The source datasets are in [`data/`](../data).
 
 > **Sample data, 1–20 January 2024:** 20 appointments, 15 feedback records, 10 resource records. Read as a directional baseline, not hospital-wide performance (BRD Section 6.4).
 
@@ -36,7 +38,7 @@ The Data Analysis Workbook (Excel) cleans and links the three source datasets, t
 
 | Metric | Value | Source / formula basis |
 |---|---|---|
-| Total appointments analysed | 20 | COUNTA of AppointmentID |
+| Total appointments analyzed | 20 | COUNTA of AppointmentID |
 | Completed | 8 | COUNTIF Status = Completed |
 | No Show | 4 | COUNTIF Status = No Show |
 | Rescheduled | 4 | COUNTIF Status = Rescheduled |
@@ -48,7 +50,7 @@ The Data Analysis Workbook (Excel) cleans and links the three source datasets, t
 
 | Metric | Value | Source / formula basis |
 |---|---|---|
-| Feedback records analysed | 15 | COUNT of SatisfactionScore (Cleaned_Feedback) |
+| Feedback records analyzed | 15 | COUNT of SatisfactionScore (Cleaned_Feedback) |
 | Average satisfaction score | 7.0 / 10 | AVERAGE of SatisfactionScore (Cleaned_Feedback) |
 | Feedback records with scores ≥ 8 | 6 | COUNTIF SatisfactionScore ≥ 8 (Cleaned_Feedback) |
 | Feedback records with scores ≤ 7 | 9 | COUNTIF SatisfactionScore ≤ 7 (Cleaned_Feedback) |
@@ -68,7 +70,7 @@ Satisfaction is calculated from Cleaned_Feedback only and is not tied to a speci
 | Recorded usage — Nurse (hrs/day) | 0 | AVERAGEIF ResourceType = Nurse |
 
 Note: Nurse usage of 0 hrs/day reflects both nurse records being flagged 'Unavailable', not spare capacity.
-Two records per resource type, with no capacity baseline or department attribution: these are recorded hours, not a utilisation rate (BRD Section 6.3).
+Two records per resource type, with no capacity baseline or department attribution: these are recorded hours, not a utilization rate (BRD Section 6.3).
 
 ### 4. Disruption breakdown
 

@@ -2,9 +2,24 @@
 
 *HealthFirst Care - Business Analysis Case Study*
 
-[← Project Overview](01-project-overview.md) · [README](../README.md) · [RTM →](03-rtm.md)
+**Author:** Pham Truong Que Huong · **Version:** 1.0 · **Date:** July 2026 · **Status:** Draft for portfolio, not approved
+
+[← Project Summary](01-project-summary.md) · [README](../README.md) · [RTM →](03-rtm.md)
 
 ---
+
+**Contents**
+
+- [1. Project Overview](#1-project-overview)
+- [2. Business Background and Problem Statement](#2-business-background-and-problem-statement)
+- [3. Stakeholders](#3-stakeholders)
+- [4. Current State Analysis](#4-current-state-analysis)
+- [5. Root Cause Analysis](#5-root-cause-analysis)
+- [6. Data Analysis Summary](#6-data-analysis-summary)
+- [7. Business Objectives and Baseline Indicators](#7-business-objectives-and-baseline-indicators)
+- [8. Scope](#8-scope)
+- [9. Requirements](#9-requirements)
+- [10. Assumptions, Constraints and Dependencies](#10-assumptions-constraints-and-dependencies)
 
 ## 1. Project Overview
 
@@ -28,7 +43,7 @@ HealthFirst Care has five clinical departments supported by administrative, nurs
 
 These conditions limit visibility across departments and make it difficult to coordinate appointments, communicate changes promptly, and allocate available resources effectively. They also increase administrative effort and limit management's ability to monitor operational performance.
 
-The business problem is therefore how to improve appointment management, resource visibility, patient communication, and information sharing across departments while establishing reliable measures of operational performance. The specific pain points, their evidence, and their underlying process gaps are analysed in Sections 4 and 5.
+The business problem is therefore how to improve appointment management, resource visibility, patient communication, and information sharing across departments while establishing reliable measures of operational performance. The specific pain points, their evidence, and their underlying process gaps are analyzed in Sections 4 and 5.
 
 ## 3. Stakeholders
 
@@ -73,7 +88,7 @@ The analysis examines three problem areas separately because the available evide
 |---|---|
 | 1\. Why is information delayed or re-entered? | Doctors and nurses report late test results, cumbersome referrals and poorly coordinated patient transfers (simulated stakeholder profiles). In each case, information passes between departments through manual hand-offs. |
 | 2\. Why are manual hand-offs needed? | Scheduling and patient-record systems are not integrated (IT Manager profile), and billing staff reconcile billing records with treatment data from several departments (Billing Administrator profile). Staff cannot easily access current information held by another department. |
-| Underlying gap | Information is not consistently available to the next department when needed. The dataset does not quantify hand-off delays or repeated data entry. The Process Analysis uses discharge as an illustrative scenario for this gap; its steps are a modelling assumption and have not been validated with stakeholders. |
+| Underlying gap | Information is not consistently available to the next department when needed. The dataset does not quantify hand-off delays or repeated data entry. The Process Analysis uses discharge as an illustrative scenario for this gap; its steps are a modeling assumption and have not been validated with stakeholders. |
 
 ### 5.3 Patient Waiting Time
 
@@ -89,7 +104,7 @@ The analysis uses 20 appointment records, 15 patient feedback records, and 10 re
 
 ### 6.1 Appointment data
 
-Records analysed: 20 appointments, covering 1–20 January 2024 across five departments.
+Records analyzed: 20 appointments, covering 1–20 January 2024 across five departments.
 
 | Status | Count | Share |
 |---|---|---|
@@ -109,7 +124,7 @@ Records analysed: 20 appointments, covering 1–20 January 2024 across five depa
 
 ### 6.2 Patient feedback data
 
-Records analysed: 15 feedback records. Average satisfaction score: 7.0/10.
+Records analyzed: 15 feedback records. Average satisfaction score: 7.0/10.
 
 | Score band | Definition | Count | Share |
 |---|---|---|---|
@@ -144,7 +159,7 @@ The dataset contains 10 resource records, with two records per resource type. Re
 | Repeating data patterns | Department and time-slot comparisons reflect the constructed dataset, not actual operational differences, and should not be used to compare departments. |
 | Feedback not linked to an appointment | Satisfaction cannot be tied to a specific visit or appointment outcome |
 | No cancellation or rescheduling reasons, timing or slot reuse | The contribution of patient-side and hospital-side factors remains unknown, and the data cannot show whether cancelled slots were reused. The sample therefore does not establish a lost-capacity rate. |
-| Limited resource data and historical period | Resource utilisation cannot be established, and baseline findings need validation against current operational data. |
+| Limited resource data and historical period | Resource utilization cannot be established, and baseline findings need validation against current operational data. |
 
 ### 6.5 Measurement gaps and open questions
 
@@ -193,12 +208,12 @@ The objectives below define the intended business outcomes and proposed acceptan
 | Improve appointment accessibility | Patients can book, reschedule, and cancel online, with an assisted channel available for those who need it. | Scenario-based UAT for FR-01, FR-02, FR-05, and NFR-04. |
 | Improve patient communication | Bookings and appointment changes trigger notifications; staff-recorded delays trigger delay notifications. | Scenario-based UAT for FR-07, FR-08, and FR-09. |
 | Improve resource visibility | Current doctor, room, and equipment availability is displayed at the point of booking or assignment. | Scenario-based UAT for FR-03, FR-10, and FR-11. |
-| Improve access to information | Authorised staff can access current patient information according to their roles, without repeated data entry. | Scenario-based UAT for FR-12, FR-13, and NFR-02. |
+| Improve access to information | Authorized staff can access current patient information according to their roles, without repeated data entry. | Scenario-based UAT for FR-12, FR-13, and NFR-02. |
 | Improve operational visibility | Management can view current appointment outcomes without manually preparing reports. | Reconcile the appointment outcome summary against appointment records (FR-14). |
 
 ### 7.2 Baseline indicators
 
-The following indicators are calculated from the available sample data. They are descriptive baselines and must be validated against current operational data before performance targets are finalised.
+The following indicators are calculated from the available sample data. They are descriptive baselines and must be validated against current operational data before performance targets are finalized.
 
 | Indicator | Baseline (sample) | Source | Limitation |
 |---|---|---|---|
@@ -242,7 +257,7 @@ The case brief specifies a target of reducing average patient waiting time by 20
 | **BR-02** | Patients need an accessible and reliable way to book and change appointments online, while retaining an assisted booking channel. | PP-01 | Patient profile |
 | **BR-03** | Patients need timely confirmation, reminders, and notifications of appointment changes and delays. | PP-03, PP-10 | Patient profile |
 | **BR-04** | Staff need current doctor, room, and equipment availability when scheduling appointments or assigning resources. | PP-04, PP-05, PP-06 | Admin and doctor profiles; case brief |
-| **BR-05** | Authorised staff need access to current patient information across departments, with fewer manual hand-offs and repeated data entry. | PP-07, PP-08 | IT, admin, doctor, and nurse profiles |
+| **BR-05** | Authorized staff need access to current patient information across departments, with fewer manual hand-offs and repeated data entry. | PP-07, PP-08 | IT, admin, doctor, and nurse profiles |
 | **BR-06** | Management needs a current view of appointment performance without manually preparing reports. | PP-09 | Case brief; IT profile |
 | **BR-07** | HealthFirst Care needs to measure and reduce the time patients wait between check-in and the start of their consultation. | PP-05, PP-10 | Case brief; patient profile |
 
@@ -260,11 +275,11 @@ The functional requirements define the system capabilities needed to support the
 | **FR-06** | A slot released by a cancellation or rescheduling shall become available for booking again. | BR-04 |
 | **FR-07** | Patients shall receive confirmation when a booking, rescheduling, or cancellation request is successfully processed. | BR-03 |
 | **FR-08** | Patients shall receive a reminder before their scheduled appointment. | BR-03 |
-| **FR-09** | Patients shall be notified when authorised staff record a hospital-initiated appointment change, cancellation, or delay. | BR-03, BR-07 |
+| **FR-09** | Patients shall be notified when authorized staff record a hospital-initiated appointment change, cancellation, or delay. | BR-03, BR-07 |
 | **FR-10** | The current status of examination rooms and equipment shall be displayed when resources are assigned. | BR-04, BR-07 |
-| **FR-11** | Authorised staff shall be able to record and update room and equipment statuses: Available, In Use, or Under Maintenance. | BR-04 |
-| **FR-12** | Authorised staff across departments shall be able to access current patient information according to their assigned roles. | BR-05; NFR-02 |
-| **FR-13** | Information recorded by one department shall be available to the next authorised department without repeated manual entry. For example, discharge information recorded by clinical staff shall be available to administrative staff for billing clearance. | BR-05 |
+| **FR-11** | Authorized staff shall be able to record and update room and equipment statuses: Available, In Use, or Under Maintenance. | BR-04 |
+| **FR-12** | Authorized staff across departments shall be able to access current patient information according to their assigned roles. | BR-05; NFR-02 |
+| **FR-13** | Information recorded by one department shall be available to the next authorized department without repeated manual entry. For example, discharge information recorded by clinical staff shall be available to administrative staff for billing clearance. | BR-05 |
 | **FR-14** | Management shall be able to view a current summary of appointment outcomes - Completed, No-show, Cancelled, and Rescheduled - without manually preparing reports. | BR-01, BR-06 |
 | **FR-16** | The check-in time (when check-in is completed) and the consultation start time (when the consultation begins) shall be recorded for each attended appointment to support waiting-time measurement (waiting time = consultation start time − check-in time). | BR-07 |
 
@@ -291,14 +306,14 @@ The following non-functional requirements define proposed quality, security, and
 | **Assumption** | Patients who can use the digital channel may adopt self-service booking and appointment changes. | The expected reduction in assisted booking workload may not be achieved; the assisted channel must remain available. |
 | **Assumption** | The 20% waiting-time target refers to average waiting time from check-in to consultation start. | If the target refers to delay against the scheduled appointment time, BR-07, FR-16 and the KPI definition must be updated. Scheduled times are already held in appointment records. |
 | **Assumption** | The discharge scenario in the Process Analysis reflects a typical hand-off between clinical and administrative staff. It has not been validated, and the roles that prepare, complete, review or approve the discharge summary are not confirmed. | The To-Be discharge process and the FR-13 example may need revision after stakeholder review. |
-| **Constraint** | Funding is limited. | Requirements must be prioritised based on business value and available resources; priorities are recorded in the RTM. |
+| **Constraint** | Funding is limited. | Requirements must be prioritized based on business value and available resources; priorities are recorded in the RTM. |
 | **Constraint** | Patient information must comply with applicable healthcare privacy and security requirements. | NFR-01 and NFR-02 must be addressed in the proposed requirements. |
 | **Constraint** | Staffing levels and room capacity are outside the project scope. | Improved resource visibility may help staff identify shortages, but it does not increase available capacity. |
-| **Constraint** | Time available for stakeholder review and validation may be limited. | Validation activities may need to be prioritised. |
+| **Constraint** | Time available for stakeholder review and validation may be limited. | Validation activities may need to be prioritized. |
 | **Dependency** | Resource visibility depends on staff maintaining accurate and up-to-date room and equipment statuses. | FR-10 depends on the status recording and update capability in FR-11. Outdated status information may lead to incorrect resource assignments. |
 
 **Data limitation**: Sample findings must be validated against current operational data before being used to set performance targets. See Section 6.4.
 
 ---
 
-[← Project Overview](01-project-overview.md) · [README](../README.md) · [RTM →](03-rtm.md)
+[← Project Summary](01-project-summary.md) · [README](../README.md) · [RTM →](03-rtm.md)

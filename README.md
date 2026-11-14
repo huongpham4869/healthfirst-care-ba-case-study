@@ -5,7 +5,7 @@ A Business Analysis capstone case study on where appointments, resources and inf
 **Role:** Business Analyst · **Type:** Capstone project · **Timeline:** May – Jul 2026 · **Domain:** Healthcare operations
 
 > [!NOTE]
-> This is a course capstone, not work for a real hospital. It uses a case brief, simulated stakeholder profiles and three small sample datasets. No live interviews were held, no system was selected or built, and the requirements have not been validated or tested.
+> This is a course capstone based on a case brief. No live interviews were held, no system was selected or built, and the requirements have not been validated or tested.
 
 ## At a glance
 
@@ -14,7 +14,7 @@ A Business Analysis capstone case study on where appointments, resources and inf
 | **Problem** | Scheduling, patient records and reporting run on separate systems and manual work. Patients face disrupted appointments and long waits; staff cannot see current doctor, room or equipment availability. |
 | **Approach** | Data analysis in Excel, root cause analysis by problem area, As-Is / To-Be modeling in BPMN, gap analysis, stakeholder analysis |
 | **Proposed improvements** | Online booking with conflict checks, reminders and delay notices, live room and equipment status, shared patient information between departments, and recording check-in and consultation start times |
-| **Key evidence** | 60% appointment disruption, 20% no-show, satisfaction 7.0 / 10 (sample data) |
+| **Key evidence** | 60% appointment disruption, 20% no-show, satisfaction 7.0 / 10 |
 | **Deliverables** | BRD, RTM (26 requirements), stakeholder analysis, 6 BPMN models, data analysis with dashboard, risk management plan, 19-slide summary |
 
 **Start here:** the [Project Summary](docs/01-project-summary.md) (19 slides), then the [BRD](docs/02-brd.md).
